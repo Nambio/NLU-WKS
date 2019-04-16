@@ -60,7 +60,7 @@ app.post('/api/analyze', (req, res, next) => {
       if (err) {
         return next(err);
       }
-      console.log(results['relations'][0]);
+      
       return res.json({ query: req.body.query, results });
     });
   }
